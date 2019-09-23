@@ -4,9 +4,11 @@ from packaging.version import Version, parse
 import zipfile
 import wget
 import os
+import sys
 
 # Define the TF realese to download
-product = 'terraform'
+product = sys.argv[1]
+print('installing {0}'.format(product))
 install_path = '/usr/local/bin/'
 osys = 'linux'                                                                                                                                                                                                                   
 arch = 'amd64'

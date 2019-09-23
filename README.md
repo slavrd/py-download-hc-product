@@ -1,13 +1,15 @@
-# Downlaod HC product
+# Download HashiCorp product
 
-A simple python script to download the latest or a specified version of an HC product.
+A simple python script to download the latest version of an HashiCorp product.
 
 # Requirements
 
-Python2.7 and the prerequsite packages described in `requirements.txt` / `Pipfile`.
+Python2.7 and the prerequisite packages described in `requirements.txt` / `Pipfile`.
 
 # Usage
 
-Script is not interactive. Define the product and its build that you want to download by setting the appropriate variable in the begining of the script.
+Script is not interactive. Except for the product the other build parameters need to be defined by setting the appropriate variable in the beginning of the script.
 
-Run the script `python download-hc-product.py`
+Running the script would usually require `sudo` to be able to install the binary. For example:
+
+`sudo python download-hc-product.py terraform`

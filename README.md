@@ -8,8 +8,14 @@ Python2.7 and the prerequisite packages described in `requirements.txt` / `Pipfi
 
 # Usage
 
-Script is not interactive. Except for the product the other build parameters need to be defined by setting the appropriate variable in the beginning of the script.
+Script is not interactive.
+
+Product and version can be passed as 1st and 2nd argument respectively. If the version argument is ommited the latest version will be installed.
+
+The OS and processor architecture are set as variables inside the script.
 
 Running the script would usually require `sudo` to be able to install the binary. For example:
 
 `sudo python download-hc-product.py terraform`
+
+`sudo python download-hc-product.py terraform 0.11.14`
